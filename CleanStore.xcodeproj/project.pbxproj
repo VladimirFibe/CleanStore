@@ -8,42 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		02D2C4F12AA889E400B8F0A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C4F02AA889E400B8F0A6 /* AppDelegate.swift */; };
-		02D2C4F52AA889E400B8F0A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C4F42AA889E400B8F0A6 /* ViewController.swift */; };
 		02D2C4FA2AA889E500B8F0A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D2C4F92AA889E500B8F0A6 /* Assets.xcassets */; };
 		02D2C4FD2AA889E500B8F0A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D2C4FB2AA889E500B8F0A6 /* LaunchScreen.storyboard */; };
-		02D2C50C2AA88AE400B8F0A6 /* CreateOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C5062AA88AE400B8F0A6 /* CreateOrderPresenter.swift */; };
-		02D2C50D2AA88AE400B8F0A6 /* CreateOrderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C5072AA88AE400B8F0A6 /* CreateOrderWorker.swift */; };
-		02D2C50E2AA88AE400B8F0A6 /* CreateOrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C5082AA88AE400B8F0A6 /* CreateOrderRouter.swift */; };
-		02D2C50F2AA88AE400B8F0A6 /* CreateOrderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C5092AA88AE400B8F0A6 /* CreateOrderModels.swift */; };
-		02D2C5102AA88AE400B8F0A6 /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C50A2AA88AE400B8F0A6 /* CreateOrderViewController.swift */; };
-		02D2C5112AA88AE400B8F0A6 /* CreateOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C50B2AA88AE400B8F0A6 /* CreateOrderInteractor.swift */; };
-		02D2C5192AA88B2B00B8F0A6 /* DeleteOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C5132AA88B2B00B8F0A6 /* DeleteOrderPresenter.swift */; };
-		02D2C51A2AA88B2B00B8F0A6 /* DeleteOrderWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C5142AA88B2B00B8F0A6 /* DeleteOrderWorker.swift */; };
-		02D2C51B2AA88B2B00B8F0A6 /* DeleteOrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C5152AA88B2B00B8F0A6 /* DeleteOrderRouter.swift */; };
-		02D2C51C2AA88B2B00B8F0A6 /* DeleteOrderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C5162AA88B2B00B8F0A6 /* DeleteOrderModels.swift */; };
-		02D2C51D2AA88B2B00B8F0A6 /* DeleteOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C5172AA88B2B00B8F0A6 /* DeleteOrderViewController.swift */; };
-		02D2C51E2AA88B2B00B8F0A6 /* DeleteOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D2C5182AA88B2B00B8F0A6 /* DeleteOrderInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02D2C4ED2AA889E400B8F0A6 /* CleanStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D2C4F02AA889E400B8F0A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02D2C4F42AA889E400B8F0A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		02D2C4F92AA889E500B8F0A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02D2C4FC2AA889E500B8F0A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02D2C4FE2AA889E500B8F0A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		02D2C5062AA88AE400B8F0A6 /* CreateOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderPresenter.swift; sourceTree = "<group>"; };
-		02D2C5072AA88AE400B8F0A6 /* CreateOrderWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderWorker.swift; sourceTree = "<group>"; };
-		02D2C5082AA88AE400B8F0A6 /* CreateOrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderRouter.swift; sourceTree = "<group>"; };
-		02D2C5092AA88AE400B8F0A6 /* CreateOrderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderModels.swift; sourceTree = "<group>"; };
-		02D2C50A2AA88AE400B8F0A6 /* CreateOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewController.swift; sourceTree = "<group>"; };
-		02D2C50B2AA88AE400B8F0A6 /* CreateOrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderInteractor.swift; sourceTree = "<group>"; };
-		02D2C5132AA88B2B00B8F0A6 /* DeleteOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteOrderPresenter.swift; sourceTree = "<group>"; };
-		02D2C5142AA88B2B00B8F0A6 /* DeleteOrderWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteOrderWorker.swift; sourceTree = "<group>"; };
-		02D2C5152AA88B2B00B8F0A6 /* DeleteOrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteOrderRouter.swift; sourceTree = "<group>"; };
-		02D2C5162AA88B2B00B8F0A6 /* DeleteOrderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteOrderModels.swift; sourceTree = "<group>"; };
-		02D2C5172AA88B2B00B8F0A6 /* DeleteOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteOrderViewController.swift; sourceTree = "<group>"; };
-		02D2C5182AA88B2B00B8F0A6 /* DeleteOrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteOrderInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,49 +50,44 @@
 		02D2C4EF2AA889E400B8F0A6 /* CleanStore */ = {
 			isa = PBXGroup;
 			children = (
-				02D2C5042AA88AB400B8F0A6 /* Features */,
-				02D2C4F02AA889E400B8F0A6 /* AppDelegate.swift */,
-				02D2C4F42AA889E400B8F0A6 /* ViewController.swift */,
-				02D2C4F92AA889E500B8F0A6 /* Assets.xcassets */,
-				02D2C4FB2AA889E500B8F0A6 /* LaunchScreen.storyboard */,
-				02D2C4FE2AA889E500B8F0A6 /* Info.plist */,
+				02D2C53B2AA8B07800B8F0A6 /* Scenes */,
+				02D2C53A2AA8B05D00B8F0A6 /* Supporting Files */,
+				02D2C5392AA8B04E00B8F0A6 /* App */,
 			);
 			path = CleanStore;
 			sourceTree = "<group>";
 		};
-		02D2C5042AA88AB400B8F0A6 /* Features */ = {
+		02D2C5392AA8B04E00B8F0A6 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				02D2C5122AA88B0200B8F0A6 /* DeleteOrder */,
-				02D2C5052AA88ABB00B8F0A6 /* CreateOrder */,
+				02D2C4F02AA889E400B8F0A6 /* AppDelegate.swift */,
 			);
-			path = Features;
+			path = App;
 			sourceTree = "<group>";
 		};
-		02D2C5052AA88ABB00B8F0A6 /* CreateOrder */ = {
+		02D2C53A2AA8B05D00B8F0A6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				02D2C5062AA88AE400B8F0A6 /* CreateOrderPresenter.swift */,
-				02D2C5072AA88AE400B8F0A6 /* CreateOrderWorker.swift */,
-				02D2C5082AA88AE400B8F0A6 /* CreateOrderRouter.swift */,
-				02D2C5092AA88AE400B8F0A6 /* CreateOrderModels.swift */,
-				02D2C50A2AA88AE400B8F0A6 /* CreateOrderViewController.swift */,
-				02D2C50B2AA88AE400B8F0A6 /* CreateOrderInteractor.swift */,
+				02D2C4F92AA889E500B8F0A6 /* Assets.xcassets */,
+				02D2C4FB2AA889E500B8F0A6 /* LaunchScreen.storyboard */,
+				02D2C4FE2AA889E500B8F0A6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02D2C53B2AA8B07800B8F0A6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				02D2C53C2AA8B08C00B8F0A6 /* CreateOrder */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		02D2C53C2AA8B08C00B8F0A6 /* CreateOrder */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = CreateOrder;
-			sourceTree = "<group>";
-		};
-		02D2C5122AA88B0200B8F0A6 /* DeleteOrder */ = {
-			isa = PBXGroup;
-			children = (
-				02D2C5132AA88B2B00B8F0A6 /* DeleteOrderPresenter.swift */,
-				02D2C5142AA88B2B00B8F0A6 /* DeleteOrderWorker.swift */,
-				02D2C5152AA88B2B00B8F0A6 /* DeleteOrderRouter.swift */,
-				02D2C5162AA88B2B00B8F0A6 /* DeleteOrderModels.swift */,
-				02D2C5172AA88B2B00B8F0A6 /* DeleteOrderViewController.swift */,
-				02D2C5182AA88B2B00B8F0A6 /* DeleteOrderInteractor.swift */,
-			);
-			path = DeleteOrder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,20 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02D2C50F2AA88AE400B8F0A6 /* CreateOrderModels.swift in Sources */,
-				02D2C51B2AA88B2B00B8F0A6 /* DeleteOrderRouter.swift in Sources */,
-				02D2C5112AA88AE400B8F0A6 /* CreateOrderInteractor.swift in Sources */,
-				02D2C50D2AA88AE400B8F0A6 /* CreateOrderWorker.swift in Sources */,
-				02D2C5102AA88AE400B8F0A6 /* CreateOrderViewController.swift in Sources */,
-				02D2C51C2AA88B2B00B8F0A6 /* DeleteOrderModels.swift in Sources */,
-				02D2C5192AA88B2B00B8F0A6 /* DeleteOrderPresenter.swift in Sources */,
-				02D2C51A2AA88B2B00B8F0A6 /* DeleteOrderWorker.swift in Sources */,
-				02D2C4F52AA889E400B8F0A6 /* ViewController.swift in Sources */,
-				02D2C50E2AA88AE400B8F0A6 /* CreateOrderRouter.swift in Sources */,
 				02D2C4F12AA889E400B8F0A6 /* AppDelegate.swift in Sources */,
-				02D2C51D2AA88B2B00B8F0A6 /* DeleteOrderViewController.swift in Sources */,
-				02D2C51E2AA88B2B00B8F0A6 /* DeleteOrderInteractor.swift in Sources */,
-				02D2C50C2AA88AE400B8F0A6 /* CreateOrderPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
