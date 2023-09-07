@@ -325,11 +325,16 @@ extension CreateOrderViewController: UIPickerViewDelegate, UIPickerViewDataSourc
         1
     }
 
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(
+        _ pickerView: UIPickerView,
+        numberOfRowsInComponent component: Int) -> Int {
         interactor?.shippingMethods.count ?? 0
     }
 
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(
+        _ pickerView: UIPickerView,
+        titleForRow row: Int,
+        forComponent component: Int) -> String? {
         interactor?.shippingMethods[row]
     }
 

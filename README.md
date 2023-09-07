@@ -94,6 +94,37 @@ make install_templates
 в дилоговом окне создания нового файла появится раздел Clean Swift
 ![](img/4.png)
 
+# The "Create Order" Use Case
+Этот пример переписан без использования Storyboard. 
+
+![](img/5.png)
+
+Нам необходимо вывести способы доставки. Так как они могут изменяться, то мы их можем разместить в interator
+
+![](img/6.png)
+
+А в контролере получить доступ к этому массиву
+
+![](img/7.png)
+
+Следующая задача - перенести дату, полученную в UIDataPicker, в поле UITextField
+![](img/8.png)
+
+Создаем модель, где в Request и Response передаем Date, а во viewmodel, которая прийдет для отображения в контроллер, уже фигурирует String
+![](img/9.png)
+
+![](img/10.png)
+
+
+![](img/11.png)
+
+![](img/12.png)
+
+![](img/13.png)
+
+![](img/14.png)
+
+![](img/15.png)
 - [Routing without segues](https://stackoverflow.com/questions/48185213/clean-swift-routing-without-segues)
 - [Router и Data Passing архитектуры Clean Swift](https://habr.com/ru/articles/454032/)
 - [Clean, Simple and Composable Routing in Swift for iOS Apps - Part 1](https://cassiuspacheco.com/clean-simple-and-composable-routing-for-ios-apps)
