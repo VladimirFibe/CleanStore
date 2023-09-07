@@ -4,3 +4,8 @@
 - [Router и Data Passing архитектуры Clean Swift](https://habr.com/ru/articles/454032/)
 - [Clean, Simple and Composable Routing in Swift for iOS Apps - Part 1](https://cassiuspacheco.com/clean-simple-and-composable-routing-for-ios-apps)
 
+# Установка
+
+На сайте [clean-swift.com](https://clean-swift.com) необходимо заполнить форму
+
+![](img/1.png)
