@@ -35,20 +35,7 @@ class ListOrdersViewController: UITableViewController, ListOrdersDisplayLogic {
         router.viewController = viewController
         router.dataStore = interactor
     }
-    
-    // MARK: Routing
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("ready")
-        if let scene = segue.identifier {
-            let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-            if let router = router, router.responds(to: selector) {
-                router.perform(selector, with: segue)
-                print("??? prepare ????")
-            }
-        }
-    }
-    
+        
     // MARK: View lifecycle
     
     override func viewDidLoad() {
@@ -65,8 +52,7 @@ class ListOrdersViewController: UITableViewController, ListOrdersDisplayLogic {
     }
 
     @objc private func addButtonTapped() {
-        let controller = CreateOrderViewController(nibName: nil, bundle: nil)
-        navigationController?.pushViewController(controller, animated: true)
+        router?.routeToCreateOrder()
     }
     
     // MARK: Do something
@@ -105,8 +91,6 @@ class ListOrdersViewController: UITableViewController, ListOrdersDisplayLogic {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        let controller = ShowOrderViewController(nibName: nil, bundle: nil)
-        navigationController?.pushViewController(controller, animated: true)
+        router?.routeToShowOrder()
     }
 }
