@@ -62,6 +62,8 @@
 		0227F6092AA99AF000F4F8C4 /* ShowOrderFieldsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrderFieldsTableViewCell.swift; sourceTree = "<group>"; };
 		0227F60C2AA9E5AB00F4F8C4 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		0227F60D2AA9E68900F4F8C4 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		0227F60E2AA9E79A00F4F8C4 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		0227F60F2AA9E7D100F4F8C4 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		02D2C4ED2AA889E400B8F0A6 /* CleanStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D2C4F02AA889E400B8F0A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02D2C4F92AA889E500B8F0A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,6 +149,8 @@
 			children = (
 				0227F60C2AA9E5AB00F4F8C4 /* 1.png */,
 				0227F60D2AA9E68900F4F8C4 /* 2.png */,
+				0227F60E2AA9E79A00F4F8C4 /* 3.png */,
+				0227F60F2AA9E7D100F4F8C4 /* 4.png */,
 			);
 			path = img;
 			sourceTree = "<group>";

@@ -19,3 +19,8 @@
 ```
 make install_templates
 ```
+
+![](img/3.png)
+
+
+![](img/4.png)
