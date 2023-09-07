@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  CleanStore
-//
-//  Created by Vladimir Fibe on 06.09.2023.
-//
-
 import UIKit
 
 @main
@@ -14,7 +7,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ShowOrderViewController()
+        let controller = CreateOrderViewController(nibName: nil, bundle: nil)
+        window?.rootViewController = UINavigationController(rootViewController: controller)
         window?.makeKeyAndVisible()
         return true
     }
