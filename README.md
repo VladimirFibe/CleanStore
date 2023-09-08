@@ -139,13 +139,13 @@ make install_templates
 
 # List Orders
 
-Следующая задача вывести список заказов. Во viewDidLoad мы запускаем функцию fetchOrdersOnLoad в которой обращаемся к interactor
-
+Следующая задача вывести список заказов. Во viewDidLoad мы запускаем функцию fetchOrdersOnLoad в которой создаем запрос и обращаемся к interactor
 
 ![](img/14.png)
 
+Выделяем получение списка в отдельный Worker, причем конкретная реализация получения списка скрыта в orderStore. Это может быть база Core Data или получение данных с сервера. 
 ![](img/15.png)
-
+В нашем случае это будет класс OrdersMemStore, который удовлетворяет протоколу OrdersStoreProtocol, где мы в ручную разместили данные. Затем в fetchOrders получаем данные из OrderWorks асинхронно. Создали запрос и передали в presenter
 ![](img/16.png)
 
 ![](img/17.png)
@@ -171,6 +171,72 @@ make install_templates
 ![](img/27.png)
 
 ![](img/28.png)
+
+```
+@objc protocol ListOrdersRoutingLogic {
+    func routeToShowOrder()
+    func routeToCreateOrder()
+}
+
+protocol ListOrdersDataPassing {
+    var dataStore: ListOrdersDataStore? { get }
+}
+
+class ListOrdersRouter: NSObject, ListOrdersRoutingLogic, ListOrdersDataPassing {
+    
+    weak var viewController: ListOrdersViewController?
+    var dataStore: ListOrdersDataStore?
+    
+    // MARK: Routing
+    
+    func routeToShowOrder() {
+        let destinationVC = ShowOrderViewController(nibName: nil, bundle: nil)
+        var destinationDS = destinationVC.router!.dataStore!
+        passDataToShowOrder(source: dataStore!, destination: &destinationDS)
+        navigateToShowOrder(source: viewController!, destination: destinationVC)
+    }
+    
+    func routeToCreateOrder() {
+        let destinationVC = CreateOrderViewController(nibName: nil, bundle: nil)
+        var destinationDS = destinationVC.router!.dataStore!
+        passDataToCreateOrder(source: dataStore!, destination: &destinationDS)
+        navigateToCreateOrder(source: viewController!, destination: destinationVC)
+    }
+    
+    // MARK: Navigation
+    
+    func navigateToShowOrder(
+        source: ListOrdersViewController,
+        destination: ShowOrderViewController
+    ) {
+        source.navigationController?.pushViewController(destination, animated: true)
+    }
+    
+    func navigateToCreateOrder(
+        source: ListOrdersViewController,
+        destination: CreateOrderViewController
+    ) {
+        source.navigationController?.pushViewController(destination, animated: true)
+    }
+    
+    // MARK: Passing data
+    
+    func passDataToShowOrder(
+        source: ListOrdersDataStore,
+        destination: inout ShowOrderDataStore
+    ) {
+        if let selectedRow = viewController?.tableView.indexPathForSelectedRow?.row {
+            destination.order = source.orders?[selectedRow]
+        }
+    }
+    
+    func passDataToCreateOrder(
+        source: ListOrdersDataStore,
+        destination: inout CreateOrderDataStore
+    ) {
+    }
+}
+```
 - [Routing without segues](https://stackoverflow.com/questions/48185213/clean-swift-routing-without-segues)
 - [Router и Data Passing архитектуры Clean Swift](https://habr.com/ru/articles/454032/)
 - [Clean, Simple and Composable Routing in Swift for iOS Apps - Part 1](https://cassiuspacheco.com/clean-simple-and-composable-routing-for-ios-apps)

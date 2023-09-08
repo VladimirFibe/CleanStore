@@ -76,6 +76,11 @@
 		029F85D42AAA39CF00E35E67 /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
 		02D0DA0E2AAABD6100725D78 /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.png; sourceTree = "<group>"; };
 		02D0DA0F2AAAD47B00725D78 /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
+		02D0DA102AAAD76100725D78 /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		02D0DA112AAAD8A900725D78 /* 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 17.png; sourceTree = "<group>"; };
+		02D0DA122AAAD91E00725D78 /* 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 18.png; sourceTree = "<group>"; };
+		02D0DA132AAAD97D00725D78 /* 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 19.png; sourceTree = "<group>"; };
+		02D0DA142AAADA1700725D78 /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
 		02D2C4ED2AA889E400B8F0A6 /* CleanStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D2C4F02AA889E400B8F0A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02D2C4F92AA889E500B8F0A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -175,6 +180,11 @@
 				029F85D42AAA39CF00E35E67 /* 13.png */,
 				02D0DA0E2AAABD6100725D78 /* 14.png */,
 				02D0DA0F2AAAD47B00725D78 /* 15.png */,
+				02D0DA102AAAD76100725D78 /* 16.png */,
+				02D0DA112AAAD8A900725D78 /* 17.png */,
+				02D0DA122AAAD91E00725D78 /* 18.png */,
+				02D0DA132AAAD97D00725D78 /* 19.png */,
+				02D0DA142AAADA1700725D78 /* 20.png */,
 			);
 			path = img;
 			sourceTree = "<group>";

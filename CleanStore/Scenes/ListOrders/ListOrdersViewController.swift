@@ -53,12 +53,6 @@ class ListOrdersViewController: UITableViewController, ListOrdersDisplayLogic {
     @objc private func addButtonTapped() {
         router?.routeToCreateOrder()
     }
-    
-    // MARK: Do something
-    
-    func displaySomething(viewModel: ListOrders.Something.ViewModel) {
-        //nameTextField.text = viewModel.name
-    }
 
     func displayFetchedOrders(viewModel: ListOrders.FetchOrders.ViewModel) {
         displayedOrders = viewModel.displayedOrders
@@ -70,13 +64,19 @@ class ListOrdersViewController: UITableViewController, ListOrdersDisplayLogic {
         interactor?.fetchOrders(request: request)
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(
+        _ tableView: UITableView,
+        numberOfRowsInSection section: Int) -> Int {
         displayedOrders.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(
+        _ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let displayedOrder = displayedOrders[indexPath.row]
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "OrderTableViewCell") else {
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "OrderTableViewCell"
+        ) else {
             return UITableViewCell()
         }
         cell.textLabel?.text = displayedOrder.date

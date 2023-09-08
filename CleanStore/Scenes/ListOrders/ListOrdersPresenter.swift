@@ -1,7 +1,6 @@
 import UIKit
 
 protocol ListOrdersPresentationLogic {
-    func presentSomething(response: ListOrders.Something.Response)
     func presentFetchedOrders(response: ListOrders.FetchOrders.Response)
 }
 
@@ -19,30 +18,21 @@ class ListOrdersPresenter: ListOrdersPresentationLogic {
                 total: total ?? ""
             )
             displayedOrders.append(displayedOrder)
-            let viewModel = ListOrders.FetchOrders.ViewModel(displayedOrders: displayedOrders)
+            let viewModel = ListOrders.FetchOrders.ViewModel(
+                displayedOrders: displayedOrders)
             viewController?.displayFetchedOrders(viewModel: viewModel)
         }
     }
-
     weak var viewController: ListOrdersDisplayLogic?
-
     let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .short
         dateFormatter.timeStyle = .none
         return dateFormatter
     }()
-
     let currencyFormatter: NumberFormatter = {
         let currencyFormatter = NumberFormatter()
         currencyFormatter.numberStyle = .currency
         return currencyFormatter
     }()
-
-    // MARK: Do something
-    
-    func presentSomething(response: ListOrders.Something.Response) {
-        let viewModel = ListOrders.Something.ViewModel()
-        viewController?.displaySomething(viewModel: viewModel)
-    }
 }

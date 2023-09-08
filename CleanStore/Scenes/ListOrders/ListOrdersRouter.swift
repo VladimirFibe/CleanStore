@@ -32,22 +32,34 @@ class ListOrdersRouter: NSObject, ListOrdersRoutingLogic, ListOrdersDataPassing 
     
     // MARK: Navigation
     
-    func navigateToShowOrder(source: ListOrdersViewController, destination: ShowOrderViewController) {
+    func navigateToShowOrder(
+        source: ListOrdersViewController,
+        destination: ShowOrderViewController
+    ) {
         source.navigationController?.pushViewController(destination, animated: true)
     }
     
-    func navigateToCreateOrder(source: ListOrdersViewController, destination: CreateOrderViewController) {
+    func navigateToCreateOrder(
+        source: ListOrdersViewController,
+        destination: CreateOrderViewController
+    ) {
         source.navigationController?.pushViewController(destination, animated: true)
     }
     
     // MARK: Passing data
     
-    func passDataToShowOrder(source: ListOrdersDataStore, destination: inout ShowOrderDataStore) {
+    func passDataToShowOrder(
+        source: ListOrdersDataStore,
+        destination: inout ShowOrderDataStore
+    ) {
         if let selectedRow = viewController?.tableView.indexPathForSelectedRow?.row {
             destination.order = source.orders?[selectedRow]
         }
     }
     
-    func passDataToCreateOrder(source: ListOrdersDataStore, destination: inout CreateOrderDataStore) {
+    func passDataToCreateOrder(
+        source: ListOrdersDataStore,
+        destination: inout CreateOrderDataStore
+    ) {
     }
 }

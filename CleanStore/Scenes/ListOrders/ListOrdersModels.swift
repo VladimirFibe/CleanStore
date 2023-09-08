@@ -1,8 +1,6 @@
 import UIKit
 
 enum ListOrders {
-    // MARK: Use cases
-
     enum FetchOrders {
         struct Request { }
         struct Response {
@@ -18,11 +16,5 @@ enum ListOrders {
             }
             var displayedOrders: [DisplayOrder]
         }
-    }
-    
-    enum Something {
-        struct Request { }
-        struct Response { }
-        struct ViewModel { }
     }
 }
