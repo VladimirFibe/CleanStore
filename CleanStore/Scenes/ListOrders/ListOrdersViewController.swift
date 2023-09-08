@@ -2,7 +2,6 @@ import UIKit
 
 protocol ListOrdersDisplayLogic: AnyObject {
     func displayFetchedOrders(viewModel: ListOrders.FetchOrders.ViewModel)
-    func displaySomething(viewModel: ListOrders.Something.ViewModel)
 }
 
 class ListOrdersViewController: UITableViewController, ListOrdersDisplayLogic {
