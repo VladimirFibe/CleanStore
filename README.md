@@ -157,6 +157,8 @@ make install_templates
 Во viewcontroller обновляем displayedOrders и перезагружаем tableView
 ![](img/19.png)
 
+![](img/20.png)
+
 Так выглядит router для перехода по выделенной ячейке или по кнопке
 
 ```
@@ -224,9 +226,6 @@ class ListOrdersRouter: NSObject, ListOrdersRoutingLogic, ListOrdersDataPassing 
     }
 }
 ```
-
-![](img/20.png)
-
 ![](img/21.png)
 
 ![](img/22.png)
