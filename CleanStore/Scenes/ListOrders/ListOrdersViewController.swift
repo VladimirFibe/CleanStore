@@ -84,7 +84,10 @@ class ListOrdersViewController: UITableViewController, ListOrdersDisplayLogic {
         return cell
     }
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(
+        _ tableView: UITableView,
+        didSelectRowAt indexPath: IndexPath
+    ) {
         router?.routeToShowOrder()
     }
 }

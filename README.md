@@ -145,32 +145,19 @@ make install_templates
 
 Выделяем получение списка в отдельный Worker, причем конкретная реализация получения списка скрыта в orderStore. Это может быть база Core Data или получение данных с сервера. 
 ![](img/15.png)
-В нашем случае это будет класс OrdersMemStore, который удовлетворяет протоколу OrdersStoreProtocol, где мы в ручную разместили данные. Затем в fetchOrders получаем данные из OrderWorks асинхронно. Создали запрос и передали в presenter
+В нашем случае это будет класс OrdersMemStore, который удовлетворяет протоколу OrdersStoreProtocol, где мы в ручную разместили данные. Затем в fetchOrders получаем данные из OrderWorks асинхронно. Создаем запрос и передаем в presenter
 ![](img/16.png)
 
+модель в нашем случае выглядит так
 ![](img/17.png)
 
+в presenter мы форматируем дату и валюту в строки и фомируем viewmodel и возвращем ее во viewcontroller
 ![](img/18.png)
 
+Во viewcontroller обновляем displayedOrders и перезагружаем tableView
 ![](img/19.png)
 
-![](img/20.png)
-
-![](img/21.png)
-
-![](img/22.png)
-
-![](img/23.png)
-
-![](img/24.png)
-
-![](img/25.png)
-
-![](img/26.png)
-
-![](img/27.png)
-
-![](img/28.png)
+Так выглядит router для перехода по выделенной ячейке или по кнопке
 
 ```
 @objc protocol ListOrdersRoutingLogic {
@@ -237,6 +224,24 @@ class ListOrdersRouter: NSObject, ListOrdersRoutingLogic, ListOrdersDataPassing 
     }
 }
 ```
+
+![](img/20.png)
+
+![](img/21.png)
+
+![](img/22.png)
+
+![](img/23.png)
+
+![](img/24.png)
+
+![](img/25.png)
+
+![](img/26.png)
+
+![](img/27.png)
+
+![](img/28.png)
 - [Routing without segues](https://stackoverflow.com/questions/48185213/clean-swift-routing-without-segues)
 - [Router и Data Passing архитектуры Clean Swift](https://habr.com/ru/articles/454032/)
 - [Clean, Simple and Composable Routing in Swift for iOS Apps - Part 1](https://cassiuspacheco.com/clean-simple-and-composable-routing-for-ios-apps)
