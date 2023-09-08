@@ -2,7 +2,6 @@ import UIKit
 
 protocol ListOrdersBusinessLogic {
     func fetchOrders(request: ListOrders.FetchOrders.Request)
-    func doSomething(request: ListOrders.Something.Request)
 }
 
 protocol ListOrdersDataStore {
@@ -17,14 +16,6 @@ class ListOrdersInteractor: ListOrdersBusinessLogic, ListOrdersDataStore {
     
     // MARK: Do something
     
-    func doSomething(request: ListOrders.Something.Request) {
-        worker = ListOrdersWorker()
-        worker?.doSomeWork()
-        
-        let response = ListOrders.Something.Response()
-        presenter?.presentSomething(response: response)
-    }
-
     func fetchOrders(request: ListOrders.FetchOrders.Request) {
         ordersWorker.fetchOrders { orders in
             self.orders = orders

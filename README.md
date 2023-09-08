@@ -98,6 +98,9 @@ make install_templates
 ![](img/4.png)
 
 # Примеры использования
+
+# Create Order
+
 Нам необходимо вывести способы доставки.
 
 ![](img/5.png)
@@ -134,9 +137,40 @@ make install_templates
 
 ![](img/13.png)
 
+# List Orders
+
+Следующая задача вывести список заказов. Во viewDidLoad мы запускаем функцию fetchOrdersOnLoad в которой обращаемся к interactor
+
+
 ![](img/14.png)
 
 ![](img/15.png)
+
+![](img/16.png)
+
+![](img/17.png)
+
+![](img/18.png)
+
+![](img/19.png)
+
+![](img/20.png)
+
+![](img/21.png)
+
+![](img/22.png)
+
+![](img/23.png)
+
+![](img/24.png)
+
+![](img/25.png)
+
+![](img/26.png)
+
+![](img/27.png)
+
+![](img/28.png)
 - [Routing without segues](https://stackoverflow.com/questions/48185213/clean-swift-routing-without-segues)
 - [Router и Data Passing архитектуры Clean Swift](https://habr.com/ru/articles/454032/)
 - [Clean, Simple and Composable Routing in Swift for iOS Apps - Part 1](https://cassiuspacheco.com/clean-simple-and-composable-routing-for-ios-apps)

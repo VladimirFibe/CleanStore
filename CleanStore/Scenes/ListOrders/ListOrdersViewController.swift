@@ -41,7 +41,6 @@ class ListOrdersViewController: UITableViewController, ListOrdersDisplayLogic {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchOrdersOnLoad()
-        doSomething()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "OrderTableViewCell")
         navigationItem.title = "List Orders"
         navigationItem.rightBarButtonItem = UIBarButtonItem(
@@ -56,11 +55,6 @@ class ListOrdersViewController: UITableViewController, ListOrdersDisplayLogic {
     }
     
     // MARK: Do something
-        
-    func doSomething() {
-        let request = ListOrders.Something.Request()
-        interactor?.doSomething(request: request)
-    }
     
     func displaySomething(viewModel: ListOrders.Something.ViewModel) {
         //nameTextField.text = viewModel.name
